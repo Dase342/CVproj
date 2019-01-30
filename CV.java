@@ -82,4 +82,25 @@ public class CV {
 
 		System.out.println( "\nAttente: " + this.getAttente() );
 	}
+	
+	public static void main(String[] args){
+		System.out.println("Bienvenue chez Barette!");
+		
+		String[] tabUn = {"travailleur"};
+		
+		String[] competencePierre = {"Java","C#"};
+		
+		CV personneUn = new CV("To","David","Informatique de gestion",0, tabUn,"Améliorer la performance des programmes et "
+				+ "verifier qu'il n'y a pas de bug");
+		
+		personneUn.affiche();
+		
+		CV pierre = new CV("vellone","Pierre-Rafael","Montmorency",0,competencePierre,"apprendre des information utile pour le marcher du travail");
+		
+		pierre.affiche();
+	}
+	
+	
 }
+
+
